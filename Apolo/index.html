@@ -18,11 +18,7 @@
     
     <!-- Title -->
     <title>Apolo</title>
-     <!-- App css -->
-     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-     <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
-     <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />        
-
+    
   </head>
   <body>
 
@@ -391,7 +387,58 @@
         </div>
       </div>
     </div>
-
+    
+    <!-- Payment -->
+    <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="modalPaymentTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalPaymentTitle">
+              Add Payment
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+              Simplify your workflow in minutes.
+            </p>
+    
+            <!-- Form -->
+            <form>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentName">Name on card</label>
+                <input class="form-control" id="modalPaymentName" type="text" placeholder="First Last">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentNumbber">Card number</label>
+                <input class="form-control" id="modalPaymentNumbber" type="number" placeholder="4242 4242 4242 4242">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentDate">Exp. Date</label>
+                <input class="form-control" id="modalPaymentDate" type="text" placeholder="03/2023">
+              </div>
+    
+              <!-- Submit -->
+              <button class="btn w-100 btn-primary mt-3 lift">
+                Add Payment Method
+              </button>
+    
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -648,7 +695,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarAccount" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Precio
+                Precios
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarAccount">
                 <li class="dropdown-item dropend">
@@ -753,7 +800,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Precios
+                Documentation
               </a>
               <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
                 <div class="list-group list-group-flush">
@@ -834,12 +881,8 @@
           </ul>
     
           <!-- Button -->
-          <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="https://themes.getbootstrap.com/product/landkit/" target="_blank" style="background-color: orangered;">
-            Sign Up
-          </a>
-
           <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="https://themes.getbootstrap.com/product/landkit/" target="_blank">
-            Login
+            Buy now
           </a>
     
         </div>
@@ -854,30 +897,30 @@
           <div class="col-12 col-md-5 col-lg-6 order-md-2">
 
             <!-- Image -->
-            <img src="Resources/Images/LandingImage.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/illustrations/illustration-2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
 
           </div>
           <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
 
             <!-- Heading -->
             <h1 class="display-3 text-center text-md-start">
-              El <span class="text-primary">CRM</span> especializado <br>
-              en el area de seguros.
+              Welcome to <span class="text-primary">Landkit</span>. <br>
+              Develop anything.
             </h1>
 
             <!-- Text -->
             <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
-              Apolo esta enfocado en ayudar a todos los proveedores de seguros que necesiten mejorar su organización y productividad.
+              Build a beautiful, modern website with flexible Bootstrap components built from scratch.
             </p>
 
             <!-- Buttons -->
             <div class="text-center text-md-start">
               <a href="overview.html" class="btn btn-primary shadow lift me-1">
-                Conocer más <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+                View all pages <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
               </a>
-              <!--<a href="docs/index.html" class="btn btn-primary-soft lift">
+              <a href="docs/index.html" class="btn btn-primary-soft lift">
                 Documentation
-              </a>-->
+              </a>
             </div>
 
           </div>
@@ -897,12 +940,12 @@
 
             <!-- Heading -->
             <h3>
-              Recordatorios de citas
+              Built for developers
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              La integración del calendario permite una facil configuraciónde citas y programación de recordatorios y pendientes.
+              Landkit is built to make your life easier. Variables, build tooling, documentation, and reusable components.
             </p>
 
           </div>
@@ -914,16 +957,15 @@
 
             <!-- Heading -->
             <h3>
-              Mejora tu productividad
+              Designed to be modern
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              La automatización de las tareas administrativas permite un manejo inteligente del tiempo.
+              Designed with the latest design trends in mind. Landkit feels modern, minimal, and beautiful.
             </p>
 
           </div>
-
           <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
 
             <!-- Icon -->
@@ -932,19 +974,18 @@
 
             <!-- Heading -->
             <h3>
-             Digitaliza tu información
+              Documentation for everything
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-0">
-              Todos los datos sobre tus prospectos,tratos y clientes se encuentran almacenados y centralizados en un solo lugar.
+              We've written extensive documentation for components and tools, so you never have to reverse engineer anything.
             </p>
 
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
-
 
     <!-- BRANDS -->
     <section class="py-6 py-md-8 border-bottom">
@@ -1132,13 +1173,13 @@
 
             <!-- Heading -->
             <h2>
-              
-              <span class="text-primary">Descubre más beneficios</span>.
+              We have lots of experience <br>
+              <span class="text-primary">building Bootstrap themes</span>.
             </h2>
 
             <!-- Text -->
             <p class="fs-lg text-muted mb-6">
-              Un CRM es una herramienta que abarca toda la experiencia del cliente. No es solo para incrementer ventas como algunos piensan.
+              We've built well over a dozen Bootstrap themes and sold tens of thousands of copies.
             </p>
 
             <!-- List -->
@@ -1152,12 +1193,12 @@
 
                 <!-- Heading -->
                 <h4 class="mb-1">
-                  Crea relaciones duraderas con tus clientes
+                  Bootstrap users since the beginning
                 </h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6">
-                  Cada vez que realices una venta recuerda centrarte en las necesidades de cada prospecto y como tu solución los ayudara.
+                  We've been developing with Bootstrap since it was publicly released in 2011.
                 </p>
 
               </div>
@@ -1173,35 +1214,12 @@
 
                 <!-- Heading -->
                 <h4 class="mb-1">
-                  Mayor retención de clientes
+                  Deep understanding of Bootstrap
                 </h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-0">
-                  Como vendedor se tiene que entender la relación con cada cliente. Esto te ayudara a entender sus necesidades.
-                </p>
-
-              </div>
-
-            </div>
-
-            <br/>
-            <div class="d-flex">
-
-              <!-- Icon -->
-              <div class="icon text-primary">
-                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M12 8H8a4 4 0 00-4 4v1a3 3 0 003 3v2a5 5 0 01-5-5v-1a6 6 0 016-6h4V4.728a.5.5 0 01.8-.4l2.856 2.133a.5.5 0 01-.001.802l-2.857 2.121A.5.5 0 0112 8.983V8z" fill="#335EEA"/><path d="M12.058 16H16a4 4 0 004-4v-1a3 3 0 00-3-3V6a5 5 0 015 5v1a6 6 0 01-6 6h-3.942v.983a.5.5 0 01-.798.401l-2.857-2.12a.5.5 0 010-.803l2.856-2.134a.5.5 0 01.8.401V16z" fill="#335EEA" opacity=".3"/></g></svg>              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="mb-1">
-                  Convierte a los prospectos en clientes
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6">
-                  El sistema señala cuales son tus oportunidades, cuantas actividades realizaste con exito y cuales se pueden mejorar. Todo esto se puede ver en las estadisticas de ventas.
+                  We've watched Bootstrap grow up over the years and understand it better than almost anyone.
                 </p>
 
               </div>
@@ -1221,7 +1239,7 @@
               <div class="img-skewed img-skewed-start">
 
                 <!-- Image -->
-                <img src="Resources/Images/clientesLandingPage.jpg" class="screenshot img-fluid img-skewed-item" alt="...">
+                <img src="assets/img/screenshots/desktop/dashkit.jpg" class="screenshot img-fluid img-skewed-item" alt="...">
 
               </div>
 
@@ -1240,16 +1258,15 @@
 
             <!-- Heading -->
             <h2>
-              Nuestros clientes
+              Our customers are our biggest fans.
             </h2>
 
             <!-- Text -->
             <p class="fs-lg text-muted mb-7 mb-md-9">
-              Usado por agentes de seguros de multiples agencias reconocidas
+              We don't like to brag, but we don't mind letting our customers do it for us. Here are a few nice things folks have said about our themes over the years.
             </p>
 
           </div>
-
         </div> <!-- / .row -->
         <div class="row">
           <div class="col-12">
@@ -1261,16 +1278,16 @@
 
                   <!-- Slider -->
                   <div class="card-img-slider" data-flickity='{"fade": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "asNavFor": "#blogSlider", "draggable": false}'>
-                    <a class="card-img-start w-100 bg-cover" style="background-image: url(Resources/Images/AgenteSeguros1.jpg);" href="#!">
+                    <a class="card-img-start w-100 bg-cover" style="background-image: url(assets/img/photos/photo-1.jpg);" href="#!">
 
                       <!-- Image (placeholder) -->
-                      <img src="Resources/Images/AgenteSeguros1.jpg" alt="..." class="img-fluid d-md-none invisible">
+                      <img src="assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
 
                     </a>
-                    <a class="card-img-start w-100 bg-cover" style="background-image: url(Resources/Images/AgenteSeguros3.jpg);" href="#!">
+                    <a class="card-img-start w-100 bg-cover" style="background-image: url(assets/img/photos/photo-26.jpg);" href="#!">
 
                       <!-- Image (placeholder) -->
-                      <img src="Resources/Images/AgenteSeguros3.jpg" alt="..." class="img-fluid d-md-none invisible">
+                      <img src="assets/img/photos/photo-26.jpg" alt="..." class="img-fluid d-md-none invisible">
 
                     </a>
                   </div>
@@ -1363,94 +1380,249 @@
         <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>      </div>
     </div>
 
-    
+    <!-- STATS -->
+    <section class="pt-12 pt-md-13 bg-gray-200">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-lg-6 order-md-2">
 
-     <!-- START PRICING -->
+            <!-- Image -->
+            <img src="assets/img/illustrations/illustration-8.png" alt="..." class="img-fluid mb-6 mb-md-0">
 
-     <section class="pt-9 pt-md-12 bg-gray-200">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-center">
-                        <h1 class="mt-0"><i class="mdi mdi-tag-multiple"></i></h1>
-                        <h3>Choose Simple <span class="text-primary">Pricing</span></h3>
-                        <p class="text-muted mt-2">The clean and well commented code allows easy customization of the
-                            theme.It's designed for
-                            <br>describing your app, agency or business.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 order-md-1">
+
+            <!-- Heading -->
+            <h2>
+              Stay focused on your business. <br>
+              <span class="text-primary">Let us handle the design</span>.
+            </h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-gray-700 mb-6">
+              You have a business to run. Stop worring about cross-browser bugs, designing new pages, keeping your components up to date. Let us do that for you.
+            </p>
+
+            <!-- Stats -->
+            <div class="d-flex">
+              <div class="pe-5">
+                <h3 class="mb-0">
+                  <span data-countup='{"startVal": 0}' data-to="100" data-aos data-aos-id="countup:in"></span>%
+                </h3>
+                <p class="text-gray-700 mb-0">
+                  Satisfaction
+                </p>
+              </div>
+              <div class="border-start border-gray-300"></div>
+              <div class="px-5">
+                <h3 class="mb-0">
+                  <span data-countup='{"startVal": 0}' data-to="24" data-aos data-aos-id="countup:in"></span>/
+                  <span data-countup='{"startVal": 0}' data-to="7" data-aos data-aos-id="countup:in"></span>
+                </h3>
+                <p class="text-gray-700 mb-0">
+                  Support
+                </p>
+              </div>
+              <div class="border-start border-gray-300"></div>
+              <div class="ps-5">
+                <h3 class="mb-0">
+                  <span data-countup='{"startVal": 0}' data-to="100" data-aos data-aos-id="countup:in"></span>k+
+                </h3>
+                <p class="text-gray-700 mb-0">
+                  Sales
+                </p>
+              </div>
             </div>
 
-            <div class="row mt-5 pt-3">
-                <div class="col-md-4">
-                    <div class="card card-pricing">
-                        <div class="card-body text-center">
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Standard License </p>
-                            <i class="card-pricing-icon dripicons-user text-primary"></i>
-                            <h2 class="card-pricing-price">$49 <span>/ License</span></h2>
-                            <ul class="card-pricing-features">
-                                <li>10 GB Storage</li>
-                                <li>500 GB Bandwidth</li>
-                                <li>No Domain</li>
-                                <li>1 User</li>
-                                <li>Email Support</li>
-                                <li>24x7 Support</li>
-                            </ul>
-                            <button class="btn btn-primary mt-4 mb-2 rounded-pill">Choose Plan</button>
-                        </div>
-                    </div>
-                    <!-- end Pricing_card -->
-                </div>
-                <!-- end col -->
-
-                <div class="col-md-4">
-                    <div class="card card-pricing card-pricing-recommended">
-                        <div class="card-body text-center">
-                            <div class="card-pricing-plan-tag">Recommended</div>
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Multiple License</p>
-                            <i class="card-pricing-icon dripicons-briefcase text-primary"></i>
-                            <h2 class="card-pricing-price">$99 <span>/ License</span></h2>
-                            <ul class="card-pricing-features">
-                                <li>50 GB Storage</li>
-                                <li>900 GB Bandwidth</li>
-                                <li>2 Domain</li>
-                                <li>10 User</li>
-                                <li>Email Support</li>
-                                <li>24x7 Support</li>
-                            </ul>
-                            <button class="btn btn-primary mt-4 mb-2 rounded-pill">Choose Plan</button>
-                        </div>
-                    </div>
-                    <!-- end Pricing_card -->
-                </div>
-                <!-- end col -->
-
-                <div class="col-md-4">
-                    <div class="card card-pricing">
-                        <div class="card-body text-center">
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Extended License</p>
-                            <i class="card-pricing-icon dripicons-store text-primary"></i>
-                            <h2 class="card-pricing-price">$599 <span>/ License</span></h2>
-                            <ul class="card-pricing-features">
-                                <li>100 GB Storege</li>
-                                <li>Unlimited Bandwidth</li>
-                                <li>10 Domain</li>
-                                <li>Unlimited User</li>
-                                <li>Email Support</li>
-                                <li>24x7 Support</li>
-                            </ul>
-                            <button class="btn btn-primary mt-4 mb-2 rounded-pill">Choose Plan</button>
-                        </div>
-                    </div>
-                    <!-- end Pricing_card -->
-                </div>
-                <!-- end col -->
-
-            </div>
-
-        </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
     </section>
-    <!-- END PRICING -->
+
+    <!-- PRICING -->
+    <section class="pt-9 pt-md-12 bg-gray-200">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Heading -->
+            <h1>
+              Fair, simple pricing for all.
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-gray-700">
+              All types of businesses need access to development resources, so we give you the option to decide how much you need to use.
+            </p>
+
+            <!-- Form -->
+            <form class="d-flex align-items-center justify-content-center mb-7 mb-md-9">
+
+              <!-- Label -->
+              <span class="text-muted">
+                Annual
+              </span>
+
+              <!-- Switch -->
+              <div class="form-check form-switch mx-3">
+                <input class="form-check-input" type="checkbox" id="billingSwitch" data-toggle="price" data-target=".price">
+              </div>
+
+              <!-- Label -->
+              <span class="text-muted">
+                Monthly
+              </span>
+
+            </form>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row align-items-center gx-0">
+          <div class="col-12 col-md-6">
+
+            <!-- Card -->
+            <div class="card rounded-lg shadow-lg mb-6 mb-md-0" style="z-index: 1;" data-aos="fade-up">
+
+              <!-- Body -->
+              <div class="card-body py-6 py-md-8">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-xl-9">
+
+                    <!-- Badge -->
+                    <div class="text-center mb-5">
+                      <span class="badge rounded-pill bg-primary-soft">
+                        <span class="h6 fw-bold text-uppercase">Standard</span>
+                      </span>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="d-flex justify-content-center">
+                      <span class="h2 mb-0 mt-2">$</span>
+                      <span class="price display-2 mb-0" data-annual="29" data-monthly="49">29</span>
+                      <span class="h2 align-self-end mb-1">/mo</span>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="text-center text-muted mb-6 mb-md-8">
+                      per seat
+                    </p>
+
+                    <!-- Features -->
+                    <div class="d-flex">
+
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                        <i class="fe fe-check"></i>
+                      </div>
+
+                      <!-- Text -->
+                      <p>
+                        Rich, responsive landing pages
+                      </p>
+
+                    </div>
+                    <div class="d-flex">
+
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                        <i class="fe fe-check"></i>
+                      </div>
+
+                      <!-- Text -->
+                      <p>
+                        100+ styled components
+                      </p>
+
+                    </div>
+                    <div class="d-flex">
+
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                        <i class="fe fe-check"></i>
+                      </div>
+
+                      <!-- Text -->
+                      <p>
+                        Flexible, simple license
+                      </p>
+
+                    </div>
+                    <div class="d-flex">
+
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                        <i class="fe fe-check"></i>
+                      </div>
+
+                      <!-- Text -->
+                      <p>
+                        Speedy build tooling
+                      </p>
+
+                    </div>
+                    <div class="d-flex">
+
+                      <!-- Check -->
+                      <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                        <i class="fe fe-check"></i>
+                      </div>
+
+                      <!-- Text -->
+                      <p class="mb-0">
+                        6 months free support included
+                      </p>
+
+                    </div>
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+
+              <!-- Button -->
+              <a href="#!" class="card-btn btn w-100 btn-lg btn-primary">
+                Get it now
+              </a>
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 ms-md-n3">
+
+            <!-- Card -->
+            <div class="card rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+
+              <!-- Body -->
+              <div class="card-body py-6 py-md-8">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-xl-10">
+
+                    <!-- Badge -->
+                    <p class="text-center mb-8 mb-md-11">
+                      <span class="badge rounded-pill bg-primary-soft">
+                        <span class="h6 fw-bold text-uppercase">Enterprise</span>
+                      </span>
+                    </p>
+
+                    <!-- Text -->
+                    <p class="lead text-center text-muted mb-0 mb-md-10">
+                      We offer variable pricing with discounts for larger organizations. Get in touch with us and we’ll figure out something that works for everyone.
+                    </p>
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+
+              <!-- Button -->
+              <a href="#!" class="card-btn btn w-100 btn-lg btn-light bg-gray-300 text-gray-700">
+                Contact us
+              </a>
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
 
     <!-- SHAPE -->
     <div class="position-relative mt-n15">
